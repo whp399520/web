@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>人人网项目,扣666送地狱火</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content">
+            <div class="container">
+                <h1>ID查询</h1>
+                <div class="character-image-container">
+        <img id="character-image" src="huji.jpg" alt="人物相关图片" class="character-image">
+    </div>
+                
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="请输入人物ID...">
+                    <button id="search-button">查询</button>
+                </div>
+                
+                <div id="result-container" class="result-container">
+                    <div class="character-info">
+                        <img src="avatar.jpg" alt="人物头像" class="character-avatar">
+                        <div class="character-details">
+                            <div class="character-name" id="character-name">姓名</div>
+                            <div class="character-id" id="character-id">ID: </div>
+                            <div class="character-state" id="character-state">所在州或曾在州: </div>
+                            <div class="character-aliases" id="character-aliases">曾用名: </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="no-result" class="no-result" style="display: none;">
+                    未找到匹配的人物信息
+                </div>
+            </div>
+        </div>
+        <nav class="bottom-nav">
+    <a href="index.html" class="nav-item active" onclick="return true;">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+    </a>
+   <a href="fx.html" class="nav-item">
+                <i class="fas fa-search"></i>
+                <span>发现</span>
+    <a href="xq.html" class="nav-item" onclick="return true;">
+        <i class="fas fa-heart"></i>
+        <span>收藏</span>
+    </a>
+</nav>
+    </div>
+
+    <audio autoplay loop volume="0.1">
+    <source src="bgm2.mp3" type="audio/mpeg">
+    您的浏览器不支持音频元素。
+</audio>
+    <script src="script.js"></script>
+</body>
+</html>
